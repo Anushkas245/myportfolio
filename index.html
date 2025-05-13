@@ -1,1 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anushka Salkar - Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9fafb;
+      color: #222831;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 750px;
+      background: white;
+      padding: 35px 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgb(0 0 0 / 0.1);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00adb5;
+      margin-bottom: 18px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 2.4rem;
+      color: #00adb5;
+      letter-spacing: 1.5px;
+    }
+
+    header p {
+      margin-top: 6px;
+      font-weight: 600;
+      color: #393e46;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    section h2 {
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-bottom: 18px;
+      border-bottom: 2px solid #00adb5;
+      padding-bottom: 6px;
+      color: #222831;
+    }
+
+    p, li {
+      font-weight: 400;
+      font-size: 1.05rem;
+      color: #393e46;
+    }
+
+    ul, ol {
+      margin-left: 20px;
+      padding-left: 0;
+    }
+
+    ul.skills-list, ul.certifications-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul.skills-list li, ul.certifications-list li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 12px;
+      font-weight: 500;
+      color: #222831;
+    }
+    ul.skills-list li::before,
+    ul.certifications-list li::before {
+      content: "✔";
+      color: #00adb5;
+      position: absolute;
+      left: 0;
+      font-weight: 700;
+    }
+
+    ol.projects-list {
+      padding-left: 18px;
+    }
+    ol.projects-list li {
+      margin-bottom: 16px;
+    }
+    ol.projects-list li strong {
+      color: #00adb5;
+    }
+
+    .languages-softskills {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .languages, .soft-skills {
+      flex: 1 1 280px;
+    }
+
+    .soft-skills ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 6px;
+    }
+    .soft-skills ul li {
+      margin-bottom: 10px;
+      padding-left: 15px;
+      position: relative;
+      font-weight: 600;
+      color: #393e46;
+    }
+    .soft-skills ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      font-size: 1.3rem;
+      color: #00adb5;
+      top: 1px;
+      font-weight: bold;
+    }
+
+    .contact {
+      background: #00adb5;
+      border-radius: 10px;
+      padding: 25px 30px;
+      color: white;
+      text-align: center;
+      margin-top: 40px;
+      box-shadow: 0 10px 20px rgb(0 173 181 / 0.4);
+    }
+
+    .contact h2 {
+      margin-bottom: 22px;
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .contact-item {
+      margin-bottom: 14px;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .contact-item a {
+      color: #d0f0f5;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      word-break: break-word;
+    }
+
+    .contact-item a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    footer {
+      color: #888;
+      font-size: 0.9rem;
+      text-align: center;
+      margin-top: 30px;
+      user-select: none;
+    }
+
+    @media (max-width: 640px) {
+      .languages-softskills {
+        flex-direction: column;
+      }
+      .languages, .soft-skills {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main" aria-label="Interview portfolio of Your Name">
+    <header>
+      <img src="profilelinkedin.jpeg" alt="Photo of Your Name" />
+      <h1>Anushka Salkar</h1>
+      <p>Fresher Computer Science Graduate</p>
+    </header>
+
+    <section aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+      <p>
+        I am a fresher Computer Science graduate (2024–25) with a solid foundation in programming and problem-solving I'm passionate about building innovative software solutions and committed to continuous learning and growth. My technical skill set includes <strong>C#, Python, SQL, Java, HTML, CSS, and Data Structures & Algorithms.</strong>
+      </p>
+    </section>
+
+    <section aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <p>
+        <strong>Bachelor of Computer Science</strong><br />
+        PVP College, Loni, Maharashtra<br />
+        Final Year 2024 - 2025<br />
+        CGPA: 9.0
+      </p>
+    </section>
+
+    <section aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <ul class="skills-list" aria-label="Technical skills list">
+        <li>C#, Python, SQL, HTML, CSS, Java</li>
+        <li>Web Development: Bootstrap & Tailwind</li>
+        <li>Data Structures & Algorithms (DSA)</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <ol class="projects-list" aria-label="Projects list">
+        <li><strong>E-Commerce Website for a Bakery:</strong> Built a responsive e-commerce website using HTML, CSS, JavaScript, and Bootstrap.</li>
+        <li><strong>Expense Tracker:</strong> Developed an expense tracker application with Python, Tailwind CSS, and AI integration.</li>
+        <li><strong>Face Recognition Attendance System:</strong> Created a face recognition system using OpenCV and face_recognition library to manage attendance records logged in Excel.</li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="certifications-heading">
+      <h2 id="certifications-heading">Certifications</h2>
+      <ul class="certifications-list" aria-label="Certifications list">
+        <li>Foundational C# with Microsoft – freeCodeCamp & Microsoft (April 2025)</li>
+        <li>Python AI Course – Sponsored by Bajaj Finserv (January 2025)</li>
+        <li>TCS iON Career Edge - Young Professional Certification (June 2024)</li>
+        <li> Alpha(DSA With Java) from Apna College (March 2024)</li>
+      </ul>
+    </section>
+
+    <section class="languages-softskills">
+      <div class="languages" aria-labelledby="languages-heading">
+        <h2 id="languages-heading">Languages</h2>
+        <p><strong>English:</strong> Fluent</p>
+        <p><strong>German:</strong> Beginner level</p>
+      </div>
+
+      <div class="soft-skills" aria-labelledby="soft-skills-heading">
+        <h2 id="soft-skills-heading">Soft Skills</h2>
+        <ul aria-label="List of soft skills">
+          <li>Team Collaboration</li>
+          <li>Problem Solving</li>
+          <li>Time Management</li>
+          <li>Adaptability</li>
+          <li>Eagerness to Learn</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact" aria-label="Contact information">
+      <h2>Contact Me</h2>
+      <p class="contact-item" aria-label="Phone number">Phone: +91 85520 28221</p>
+      <p class="contact-item" aria-label="Email address">Email: <a href="mailto:your.email@example.com">anushkasalkar245@gmail.com</a></p>
+      <p class="contact-item" aria-label="LinkedIn profile">
+        LinkedIn: <a href="https://www.linkedin.com/in/anushka-salkar-a49523285/" target="_blank" rel="noopener noreferrer">linkedin.com/in/yourlinkedinid</a>
+      </p>
+    </section>
+     <footer class="footer">
+  © 2024 Anushka Salkar. All rights reserved.
+</footer>
+  </main>
+
+</body>
+</html>
 
